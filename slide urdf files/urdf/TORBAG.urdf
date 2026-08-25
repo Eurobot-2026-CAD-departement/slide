@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="TORBAG">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00145609729701103 0.121075324101307 -0.00597938008483946"
+        rpy="0 0 0" />
+      <mass
+        value="5.91672287940702" />
+      <inertia
+        ixx="0.0173065242471076"
+        ixy="1.87176751488714E-07"
+        ixz="-5.16575833277616E-05"
+        iyy="0.0231981709013783"
+        iyz="0.00039690974297161"
+        izz="0.0149830690086891" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TORBAG/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TORBAG/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LD19">
+    <inertial>
+      <origin
+        xyz="7.857E-05 -9.8109E-05 0.011224"
+        rpy="0 0 0" />
+      <mass
+        value="0.012032" />
+      <inertia
+        ixx="2.139E-06"
+        ixy="3.3875E-08"
+        ixz="4.1899E-09"
+        iyy="2.2143E-06"
+        iyz="-4.8463E-09"
+        izz="3.8781E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TORBAG/meshes/LD19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TORBAG/meshes/LD19.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_LD19"
+    type="fixed">
+    <origin
+      xyz="0 0 0.3572"
+      rpy="0 0 1.5644" />
+    <parent
+      link="base_link" />
+    <child
+      link="LD19" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,12 @@
+this folder contains the official and final CAD of the eurobot 2026 Aerobotix
+robot the full assembly of the robot is under the name Slide final CAD 
+you will find each section of the design in seperate folders inside the assembly 
+each folder name and part name should be self explanatory from there on 
+(for future reference zo7li9a = Slide :)
+you will also find folders that contain 3D printing files , lazer cutting and 
+most importantly the " piece util " folder containing most of the CAD files for 
+useful pieces like motors , wheels , pumps , pneumatic fittings ... it will probably
+save you a lot of time .
+you can contact jihed silini if you have any questions or  further explanation
+is needed 
+thank you for your attention to this file !!!
